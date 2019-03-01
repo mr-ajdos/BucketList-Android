@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/heading_image"
+        />
+
+    <TextView
+        android:id="@+id/login_wellcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with your credentials..."
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/heading"
+        />
+
+
+    <EditText
+        android:layout_below="@+id/login_wellcome_message"
+        android:id="@+id/login_username_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="#FFF"
+        android:singleLine="true"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/login_password_entry"
+        android:layout_below="@+id/login_username_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/login_password_entry"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:background="#FFF"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/create_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

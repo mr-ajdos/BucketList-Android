@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="10dp"
+    >
+
+    <ImageView  android:src="@drawable/date"
+        android:layout_column="0"
+        android:layout_height="25dp"
+        android:layout_row="0"
+        android:layout_gravity="start|center"
+        />
+
+    <TextView
+        android:id="@+id/lbl_payment_date"
+        android:layout_column="1"
+        android:layout_gravity="end|center_vertical"
+        android:layout_row="0"
+        android:text="11.12.1996"
+
+        />
+
+    <TextView
+        android:id="@+id/lbl_payment_id"
+        android:visibility="invisible"
+        android:layout_column="1"
+        android:layout_gravity="end|center_vertical"
+        android:layout_row="0"
+        />
+    <TextView
+        android:id="@+id/lbl_payment_amount"
+        android:layout_column="2"
+        android:layout_gravity="end|center_vertical"
+        android:layout_row="0"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="+125.00 KM"
+
+        />
+
+<!--
+    <ImageView
+        android:id="@+id/btn_payment_menu"
+        android:src="@drawable/menu"
+        android:layout_column="3"
+        android:layout_height="20dp"
+        android:layout_row="0"
+        android:layout_gravity="end|center_vertical"
+        />
+-->
+
+</GridLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/lbl_bucket_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Porsche"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar_bucket_progress"
+        android:layout_below="@+id/lbl_bucket_name"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorPrimaryDark"
+        android:min="0"
+        android:max="500"
+        android:progress="250"
+        />
+
+    <TextView
+        android:id="@+id/lbl_bucket_status"
+        android:layout_below="@+id/progressBar_bucket_progress"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="250.00 KM remaining"
+        />
+
+</RelativeLayout>

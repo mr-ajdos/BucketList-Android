@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="25dp"
+    >
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete confirmation"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/heading"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to delete selected payment?"
+        />
+
+    <TextView android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:layout_below="@+id/subheading"
+        android:layout_toLeftOf="@+id/btn_payments_add_dialog_ok"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/btn_payments_add_dialog_cancel" android:layout_height="wrap_content"
+        android:layout_width="wrap_content"  android:layout_weight="1"
+        android:text="CANCEL" />
+
+
+
+    <TextView android:textAlignment="textEnd"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/subheading"
+        android:id="@+id/btn_payments_add_dialog_ok" android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:text="CONFIRM"  android:layout_weight="1"
+        />
+
+</RelativeLayout>
